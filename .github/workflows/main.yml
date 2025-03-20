@@ -31,3 +31,6 @@ jobs:
       - name: Sts GetCallerIdentity
         run: |
           aws sts get-caller-identity
+      - name: List s3 files
+        run: |
+          aws s3 ls
