@@ -1,0 +1,9 @@
+module "ec2_instance" {
+  source  = "terraform-aws-modules/ec2-instance/aws"
+
+  instance_type          = var.instance_type
+  ami                    = var.ami
+  tags = {
+    Name = var.tag_name
+  }
+}

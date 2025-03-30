@@ -1,0 +1,30 @@
+# __generated__ by Terraform
+# Please review these resources and move them into your main configuration files.
+
+# __generated__ by Terraform from "sgr-0b47fc73bb4a0bc70"
+resource "aws_vpc_security_group_ingress_rule" "ingress" {
+  cidr_ipv4                    = "0.0.0.0/0"
+  cidr_ipv6                    = null
+  description                  = null
+  from_port                    = 80
+  ip_protocol                  = "tcp"
+  prefix_list_id               = null
+  referenced_security_group_id = null
+  security_group_id            = "sg-00740ac44c84175f4"
+  tags                         = null
+  to_port                      = 80
+}
+
+# __generated__ by Terraform from "sgr-0ab442137d13e1946"
+resource "aws_vpc_security_group_egress_rule" "egress" {
+  cidr_ipv4                    = "0.0.0.0/0"
+  cidr_ipv6                    = null
+  description                  = null
+  from_port                    = null
+  ip_protocol                  = "-1"
+  prefix_list_id               = null
+  referenced_security_group_id = null
+  security_group_id            = "sg-00740ac44c84175f4"
+  tags                         = null
+  to_port                      = null
+}

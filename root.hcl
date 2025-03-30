@@ -9,7 +9,7 @@ remote_state {
   config = {
     bucket = "8732374nsddhg3223gg23dsds"
 
-    key            = "tofu.tfstate"
+    key            = "${path_relative_to_include()}/tofu.tfstate"
     region         = "us-east-1"
     profile         = "default"
     shared_credentials_file = "/root/.aws/credentials"
